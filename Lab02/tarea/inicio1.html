@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Procesador de Texto</title>
+</head>
+<body>
+	<div style="background-color:lightblue">
+		<span><h1>Ingrese el texto:</h1></span> <br />
+	</div>
+	<div>
+		<form method="_POST" action="inicio1.html">
+			<p>Texto:</p> 
+			<input type="text" id="txt" name="txt"> 		
+			<p />
+			Operacion : <select name="operacion">
+				<option value="minusculas">Minusculas</option>
+				<option value="mayusculas">Mayusculas</option>
+				<option value="capitalizar">Capitalizar</option>
+				<option value="espacios">Eliminar espacios</option>
+			</select>
+			<p />
+			<p>Extraer cadena:</p>
+			<input type="text" name="cadena" id="cadena">
+			<p />
+			<input type="submit"> <br />
+			 			
+		</form>
+		<p style="display: none">Texto Modificado:</p>
+		<textarea cols="50" rows="5" style="display: none"> {nuevo_texto} 
+		</textarea>
+	</div>	
+	
+	
+</body>
+</html>

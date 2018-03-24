@@ -1,0 +1,77 @@
+Lab 02-DAWA - Módulos del Core y REPL
+Alumno: Palo Rosas Jesus Abdon
+Especialidad: C-15
+Grupo: A
+
+-------------------------------------------------------------------------
+Ejercicio 2.3
+	La variable arreglo_parametros no existe siempre. 
+	Esta se crea dentro de un if, por lo tanto su existencia depende de este.
+	Captura: Error - captura_eje2.3_error.PNG
+		 Solución -   captura_eje2.4_solucion.PNG
+Ejercicio 2.4
+	Captura: captura_eje2.4.PNG
+Ejercicio 2.5
+	- arreglo_parámetros: nombre= batman
+	- parametros: nombre
+	- valores: batman
+Ejercicio 2.6
+	A través del request podemos captar los parámetros enviados mediante URL y recoger lo que se necesite para, por ejemplo, mostrarlo en un documento html.
+Ejercicio 3.3
+	Se obtiene el mismo resultado que en el punto 2.4. El código esta optimizado.
+	En esta ocasión, las funciones que se encargan de recoger los parámetros y valores de la URL, se encuentran en un módulo separado.
+Ejercicio 3.7
+	Captura: captura_eje3.7.PNG
+Ejercicio 3.8
+	La reutilización de variables y funciones es útil cuando se quiere acortar código y mantenerlo ordenado.
+	Tambien si se necesitan estas funciones en otro archivo simplemente se llaman en vez de repetirlas cada vez.
+Ejercicio 4.1
+	Captura: Funcion fecha(req) - captura_eje4.1.PNG
+	El módulo se llama fecha.js. El que levanta el servidor es ejercicios.js. El archivo html es form1.html
+Ejercicio 4.2 
+	Captura: Funcion diasFaltantes(fecha) - captura_eje4.2.PNG
+	El módulo se llama fecha.js. El que levanta el servidor es ejercicios.js. El archivo html es form1.html
+Ejercicio 4.3
+	Captura: captura_eje4.3.PNG
+	El archivo que levanta el servidor es enrutador.js. Las paginas son inicio.html y galeria.html
+Ejercicio 5.4
+	Captura: captura_eje5.4.PNG
+Ejercicio 5.7, 5.8 y 5.9
+	Captura: captura_eje5.7.PNG
+Ejercicio 6.3, 6.4, 6.5 
+	Captura: captura_eje6.3.PNG
+Ejercicio 6.6
+	Captura: captura_eje6.6.PNG
+
+TAREA:
+1.
+	a. Calculadora: Utiliza el archivo server.js para levantar el servidor, operaciones.js como módulo e inicio.html.
+	b. Procesador de texto: Utiliza server1.js, operaciones.js e inicio1.html
+2.	
+	node-inspector instalado
+	Captura: captura_tarea_2.PNG
+3.
+	node-inspector es un debugger con interfaz gráfica. Se instala mediante NPM y solo funciona en navegadores Chrome y Opera.
+
+CONCLUSIONES:
+
+ - El modulo http nos sirve para crear un servidor y que acepte solicitudes desde un cliente web.
+
+ - La variable http, sobre la que podemos invocar métodos que estaban en el módulo requerido, como "createServer()".
+
+	Este método recibirá un callback que se ejecutará cada vez que el servidor reciba una petición.
+
+ - Es necesario usar el método .end() para terminar una petición y enviar los datos al cliente.
+
+ - Así como existen módulos predefinidos, tambien se pueden crear módulos personalizados que almacenen funciones que necesitemos luego de crear un servidor.
+
+ - Las variables enviadas por url se pueden recoger del parámetro request del callback y se pueden almacenar para luego ser manipuladas y devueltas.
+
+
+
+
+
+
+	
+	  
+	

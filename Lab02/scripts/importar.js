@@ -1,8 +1,8 @@
 var http = require('http'),
 	fs = require('fs'),
-	parser = require('./parser_var.js'),
-	
-	p = parser.parse_vars;
+	parser = require('./parser_var.js');
+
+var	p = parser.parse_vars,
 	datos = parser.batman;
 	
 
@@ -12,8 +12,7 @@ http.createServer(function(req,res){
 
 		var respuesta = p(req),		
 		parametros = respuesta['parametros'],
-		valores = respuesta['valores'];
-		
+		valores = respuesta['valores'];		
 
 		for (var i = 0; i < parametros.length; i++) {
 			html_string = html_string.replace('{' + parametros[i] + '}', valores[i]);
@@ -24,7 +23,7 @@ http.createServer(function(req,res){
 
 		res.writeHead(200,{'Content-type':'text'});
 		res.write(html_string);
-					
+		
 		res.end();
 
 	});

@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Calculadora Operaciones Básicas</title>
+</head>
+<body>
+	<div style="background-color:lightblue">
+		<span><h1>Ingrese los numeros:</h1></span> <br />
+	</div>
+	<div>
+		<form method="_POST" action="inicio.html">
+			<p>Numero 1</p> 
+			<input type="number" name="num1" id="num1" value=num1>
+			<p>Numero 2</p> 
+			<input type="number" name="num2" id="num2" value=num2> 
+			<p />
+			Operacion : <select name="operacion">
+				<option value="sumar">Sumar</option>
+				<option value="restar">Restar</option>
+				<option value="multiplicar">Multiplicar</option>
+				<option value="dividir">Dividir</option>
+			</select>
+			<p />
+			<input type="submit"> <br />
+		</form>
+	</div>
+	
+	<div style="background-color:lightblue">
+		<h2><span style="display: none">Resultado:</span> </h2>	
+		<h2><span style="display: none">{resultado}</span></h2>
+	</div>
+	
+</body>
+</html>
