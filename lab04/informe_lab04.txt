@@ -1,0 +1,45 @@
+Lab 04-DAWA - Sitio Web con Express
+Alumno: Palo Rosas Jesus Abdon
+Especialidad: C-15
+Grupo: A
+
+-------------------------------------------------------------------------
+Ejercicio 2.13
+	Se busca obtener diferentes comportamientos del servidor, para una misma URL
+	 de acuerdo al tipo de método recibido
+Ejercicio 2.18
+	Captura GET : captura_2.18_GET.PNG
+	Captura POST : captura_2.18_POST.PNG
+	Captura PUT : captura_2.18_PUT.PNG
+	Captura DELETE : captura_2.18_DELETE.PNG
+Ejercicio 2.21
+	Captura GET : captura_2.21.PNG
+Ejercicio 2.24
+	Captura GET : captura_2.24.PNG
+Ejercicio 2.26
+	Captura Error 404 : captura_2.26_404.PNG
+	Captura Error 500 : captura_2.26_500.PNG
+
+
+CONCLUSIONES:
+
+ - Debido a un problema incierto no se pudo instalar express-generator ni crear la aplicacion de express
+   tal como esta en el laboratorio. Se importó una carpeta con la app ya creada desde git.
+ - La creacion de un servidor mediante express es similar a node, siendo mas intuitivo.
+ - El navegador usado para probar los middlewares de nuestro servidor es Chrome.
+   La extension usada es Postman.
+ - Usando middlewares de express podemos identificar el tipo de peticion http y realizar la accion correspondiente,
+   aún si es sobre una misma url.
+ - Tambien podemos dar seguridad a nuestros directorios agregando un prefijo falso necesario para acceder a nuestros archivos en el servidor.
+ - Los middlewares nos ayudan a controlar los errores que se puedan generar mientras se navega por nuestro servidor.
+   Para evitar que el servidor se cierre y realizar medidas preventivas.
+
+
+
+
+
+
+
+	
+	  
+	
