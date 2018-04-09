@@ -22,5 +22,5 @@ app.use(function (err, req, res, next){
 })
 
 app.listen(8080, function(){
-	console.log('Aplicacion de ejemlplo en el puerto 8080')
+	console.log('Aplicacion de LANDING PAGE en el puerto 8080')
 })
