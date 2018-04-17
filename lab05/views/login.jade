@@ -1,0 +1,18 @@
+html
+	head
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title Sistema
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+	body
+		block content
+			.container
+				form.form-signin(method="post", action="/login")
+					h2.form-signin-heading Ingrese sus datos
+					div(data-role='fieldcontain')
+						fieldset(data-role='controlgroup')
+							label(for='email') email
+							input(id='email',type='text',value='',placeholder='@',name='email')
+					input.input-block-level(type="password", name="password", id="password", placeholder="Contrasenia")
+					button.btn.btn-large.btn-primary(type="submit") Iniciar sesion
+					div(data-role='fieldcontain')   
+						input(type='submit',value='Log in',data-transition='fade', data-theme='c')
