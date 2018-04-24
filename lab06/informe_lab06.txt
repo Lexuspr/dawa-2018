@@ -1,0 +1,37 @@
+Lab 06-DAWA - Drives para Node.js de MongoDB
+Alumno: Palo Rosas Jesus Abdon
+Especialidad: C-15
+Grupo: A
+
+-------------------------------------------------------------------------
+Ejercicio 1.7
+	Captura: captura_ejerc1.7.PNG
+Ejercicio 2.5
+	Captura connect 	: captura_ejerc2.5_connect.PNG
+	Captura disconnect	: captura_ejerc2.5_disconnect.PNG
+Ejercicio 2.7
+	Captura: captura_ejerc2.7.PNG
+Ejercicio 2.13
+	Captura: captura_ejerc2.13.PNG
+Ejercicio 2.14
+	Captura: captura_ejerc2.14.PNG
+Ejercicio 3.4
+	Captura: captura_ejerc3.4.PNG
+Ejercicio 3.5
+	Los datos de la grilla se han vuelto a repetir en el primer navegador luego de que se refrescara el segundo navegador
+	Captura: captura_ejerc.3.5.PNG
+Ejercicio 3.7
+	Captura: captura_ejerc3.7.PNG
+-------------------------------------------------------------------------
+
+CONCLUSIONES:
+- Jade es un motor de plantillas que se utiliza principalmente para la creación de plantillas en el lado del servidor en NodeJS con ventajas sobre el HTML simple
+- Sockets se usan para manejar las conexiones de los usuarios al servidor.
+- Socket.on pone al servidor local en escucha a la espera de un evento, mientras que socket.emit emite un evento a nuestro socket. En socket.emit se especifica el nombre del evento y el objeto que se envia.
+- Para la conexion a MongoDB se crea un archivo modelo de nuestra entidad usando mongoose. Este archivo contiene un esquema del modelo user junto con sus atributos. Tambien contiene módulos para la creación, modificación y eliminación.
+- io.emit nos permite emitir un evento e información a todos los usuarios conectados. Si se desea transmitir solo al usuario conectado al socket entonces se usa socket.emit.
+
+
+	
+
+

@@ -10,6 +10,7 @@ var user_schema = new Schema({
 	timezone: String,
 	locale: String,
 	profile_pic: String,
+	state: Boolean,
 });
 user_model = mongoose.model('user', user_schema,'users');
 
@@ -31,7 +32,8 @@ module.exports = {
 			last_name: data.last_name,
 			timezone: data.timezone,
 			locale: data.locale,
-			profile_pic: data.profile_pic 
+			profile_pic: data.profile_pic,
+			state: data.state 
 		};
 		var nuevo = new user_model(item).save();
 		callback(item);
@@ -44,8 +46,16 @@ module.exports = {
 			item.timezone = data.timezone;
 			item.locale = data.locale;
 			item.profile_pic = data.profile_pic;
+			item.state = data.state;
 			item.save();
 			callback(item);
+		});
+	},
+
+	delete: function(_id,callback){
+		user_model.findOne({_id: _id}, function(err,post){
+			post.remove();
+			callback(_id);
 		});
 	}
 	
