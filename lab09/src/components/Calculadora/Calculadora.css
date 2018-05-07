@@ -1,0 +1,19 @@
+h1 {
+	color: red;
+	font-size: 25px;
+	text-align: center;
+}
+.Calculadora {
+	padding: 5px;
+	color: green;
+	text-align: center;
+}
+button {
+	text-align: center;
+	background: black;
+	color: white;
+	border-radius: 15px;
+}
+input {
+	text-align: center;
+}
