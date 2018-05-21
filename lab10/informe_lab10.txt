@@ -1,0 +1,30 @@
+Lab 1o-DAWA - Ciclo de Vida y Routing
+Alumno: Palo Rosas Jesus Abdon
+Especialidad: C-15
+Grupo: A
+
+-------------------------------------------------------------------------
+Ejercicio 3.8
+	Captura: captura_ejerc3.8.PNG
+Ejercicio 4.7
+
+	"/" 		: inicio.PNG
+
+	"new-post"	: new_post.PNG
+
+	"posts"		: posts.PNG
+		
+-------------------------------------------------------------------------
+
+CONCLUSIONES:
+
+- React-router contiene los componentes base y funciones para hacer enrutador en React. Como trabajamos en una aplicacion tipo website instalamos el componente react-router-dom
+- Usamos BrowserRouter debido a que tenemos un servidor que manejará peticiones dinámicas (sabe como responder a cualquier posible ruta).
+- Adicionalmente existe el HasRouter que se usa para sitios web estáticos, donde el servidor solo sabe responder a peticions de archivos ya definidos.
+- El componente BrowserRouter acepta un solo elemento child, por lo tanto es recomendable que ese sea tambien un componente que renderize el resto de nuestra aplicacion.
+- El componente Routes es donde se renderizará un componente dependiendo de la ruta a la que esta asociada. En caso la ruta no coincida, Route no renderizará nada.
+
+
+	
+
+
