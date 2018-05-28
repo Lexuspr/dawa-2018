@@ -1,0 +1,28 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "Proyecto electron",
+  "main": "index.js",
+  "scripts": {
+    "pack": "build --dir",
+    "dist": "build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "enupal-electronv1",
+    "asar": true,
+    "win" : {
+      "target": "NSIS",
+      "icon": "dawa-win.ico"
+    }
+  },
+  "author": "JESUS",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-builder": "^20.15.1",
+    "electron-prebuilt": "^1.4.13"
+  },
+  "dependencies": {
+    "glob": "^7.1.2"
+  }
+}

@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Hola Mundo en Electron JS</title>
+	</head>
+	<body>
+		<h1>Hola Mundo!!! </h1>
+		<p id="content"></p>
+		<button id="new-window">Crear nueva ventana</button> <br />
+		<script>
+			// importamos 'fs' y 'path'
+			const {BrowserWindow} = require('electron').remote
+			const { readFile } = require('fs');
+			const path = require('path');
+			const { resolve } = require('path');
+			// leemos el archivo 'package.json' como utf-8
+			readFile(resolve(`${__dirname}/package.json`), 'utf-8', (error, data) => {
+				if (error) {
+					// si hay un error lo mostramos en consola
+					console.error(error);
+					return error;
+				}
+				// si no escribimos el contenido el contenido del 'package.json' en el HTML
+				return document.getElementById('content').innerHTML = data;
+				});
+			const newWindowBtn = document.getElementById('new-window')
+			
+			newWindowBtn.addEventListener('click', (event) => {
+				const modalPath = path.join('file://', __dirname, 'modal.html');
+				let win = new BrowserWindow({ width: 400, height: 320 })
+
+				win.on('close', () => { win = null })
+				win.loadURL(modalPath)
+				win.show()
+			}); 
+		</script>
+	</body>
+</html>

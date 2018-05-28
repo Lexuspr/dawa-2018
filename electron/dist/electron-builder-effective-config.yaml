@@ -1,0 +1,9 @@
+directories:
+  output: dist
+  buildResources: build
+appId: enupal-electronv1
+asar: true
+win:
+  target: NSIS
+  icon: dawa-win.ico
+electronVersion: 1.4.13

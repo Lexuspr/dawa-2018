@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  /*
+  La propiedad linear-gradient permite crear un efecto de transicion entre colores
+  solamente debemos indicar los colores entre los que deseamos varie nuestro efecto
+  por ejemplo, de azul a rojo linear-gradient(blue, red) o usando codigo hexadecimal
+  */
+  background: linear-gradient(#ADADCF,#D6CAE2);
+}
