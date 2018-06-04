@@ -1,0 +1,22 @@
+Lab 11-DAWA - Llamadas asíncronas
+Alumno: Palo Rosas Jesus Abdon
+Especialidad: C-15
+Grupo: A
+
+-------------------------------------------------------------------------
+
+		
+-------------------------------------------------------------------------
+
+CONCLUSIONES:
+
+- Usamos componentes auxiliares para evitar la regla de usar div para englobar componentes.
+- Importando Axios podemos realizar operaciones de manera asincrona durante el ciclo de vida de nuestra aplicacion,
+  como realizar un get a una dirección para obtener data y asignarla a una variable interna, todo esto antes de que
+  se cargue un componente que use dicha variable.
+- Asi como usamos get para obtener información de una dirección, tambien podemos usar post para insertar data.
+  Aunque el servidor no reciba los datos, usando POST nos da el mismo objeto de respuesta con información que podemos
+  usar en .then()
+- Podemos subir animaciones en formato css y cargarlo como un componente para usarlo en React.
+- Para cargar imagenes a nuestro proyecto en React simplemente las importamos del directorio donde este situada,
+  para luego cargarlo con una etiqueta <img>  
