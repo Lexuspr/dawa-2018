@@ -1,0 +1,11 @@
+.Post {
+	border: 1px solid black;
+	width: 28%;
+	height: 120px;
+	float: left;
+	display: block;
+	border-radius: 20px;
+	padding: 1%;
+	margin: 1.5%;
+	background: linear-gradient(#FFAB00,#CD9219);
+}
